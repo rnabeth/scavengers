@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
 
     private int level = 4;
 
-	void Awake ()
+	public void Awake ()
 	{
 	    if (instance == null)
 	        instance = this;
@@ -24,12 +24,4 @@ public class GameManager : MonoBehaviour
     {
         boardScript.SetupScene(level);
     }
-
-    // Update is called once per frame
-    /*
-    void Update ()
-    {
-	
-	}
-    */
 }
