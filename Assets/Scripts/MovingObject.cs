@@ -64,11 +64,11 @@ public abstract class MovingObject : MonoBehaviour
         T hitComponent = hit.transform.GetComponent<T>();
 
         if (!canMove && hitComponent != null) //Moving object is blocked and hit something that he can interact with
-            OnCanMove(hitComponent);
+            OnCantMove(hitComponent);
     }
 
     //Player is going to need to be able to interact with walls
     //Enemy is going to need to be able to interact with the player
-    protected abstract void OnCanMove<T>(T component)
+    protected abstract void OnCantMove<T>(T component)
         where T : Component;
 }
