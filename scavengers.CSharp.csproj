@@ -13,11 +13,13 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile></CompilerResponseFile>
+    <CompilerResponseFile>
+    </CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>5.3.0f4</UnityVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -76,10 +78,64 @@
     <Compile Include="Assets\Scripts\Loader.cs" />
     <Compile Include="Assets\Scripts\MovingObject.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
+    <Compile Include="Assets\Scripts\SoundManager.cs" />
     <Compile Include="Assets\Scripts\Wall.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Animations\Animations\Enemy1Attack.anim" />
+    <None Include="Assets\Animations\Animations\Enemy1Idle.anim" />
+    <None Include="Assets\Animations\Animations\Enemy2Attack.anim" />
+    <None Include="Assets\Animations\Animations\Enemy2Idle.anim" />
+    <None Include="Assets\Animations\Animations\PlayerChop.anim" />
+    <None Include="Assets\Animations\Animations\PlayerHit.anim" />
+    <None Include="Assets\Animations\Animations\PlayerIdle.anim" />
+    <None Include="Assets\Animations\AnimatorControllers\Enemy1.controller" />
+    <None Include="Assets\Animations\AnimatorControllers\Enemy2.overrideController" />
+    <None Include="Assets\Animations\AnimatorControllers\Player.controller" />
     <None Include="Assets\Fonts\OFL.txt" />
+    <None Include="Assets\Prefabs\Enemy1.prefab" />
+    <None Include="Assets\Prefabs\Enemy2.prefab" />
+    <None Include="Assets\Prefabs\Exit.prefab" />
+    <None Include="Assets\Prefabs\Floor1.prefab" />
+    <None Include="Assets\Prefabs\Floor2.prefab" />
+    <None Include="Assets\Prefabs\Floor3.prefab" />
+    <None Include="Assets\Prefabs\Floor4.prefab" />
+    <None Include="Assets\Prefabs\Floor5.prefab" />
+    <None Include="Assets\Prefabs\Floor6.prefab" />
+    <None Include="Assets\Prefabs\Floor7.prefab" />
+    <None Include="Assets\Prefabs\Floor8.prefab" />
+    <None Include="Assets\Prefabs\Food.prefab" />
+    <None Include="Assets\Prefabs\GameManager.prefab" />
+    <None Include="Assets\Prefabs\OuterWall1.prefab" />
+    <None Include="Assets\Prefabs\OuterWall2.prefab" />
+    <None Include="Assets\Prefabs\OuterWall3.prefab" />
+    <None Include="Assets\Prefabs\Player.prefab" />
+    <None Include="Assets\Prefabs\Soda.prefab" />
+    <None Include="Assets\Prefabs\Wall1.prefab" />
+    <None Include="Assets\Prefabs\Wall2.prefab" />
+    <None Include="Assets\Prefabs\Wall3.prefab" />
+    <None Include="Assets\Prefabs\Wall4.prefab" />
+    <None Include="Assets\Prefabs\Wall5.prefab" />
+    <None Include="Assets\Prefabs\Wall6.prefab" />
+    <None Include="Assets\Prefabs\Wall7.prefab" />
+    <None Include="Assets\Prefabs\Wall8.prefab" />
+    <None Include="Assets\Scenes\Main.unity" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Assets\Audio\scavengers_chop1.aif" />
+    <Content Include="Assets\Audio\scavengers_chop2.aif" />
+    <Content Include="Assets\Audio\scavengers_die.aif" />
+    <Content Include="Assets\Audio\scavengers_enemy1.aif" />
+    <Content Include="Assets\Audio\scavengers_enemy2.aif" />
+    <Content Include="Assets\Audio\scavengers_footstep1.aif" />
+    <Content Include="Assets\Audio\scavengers_footstep2.aif" />
+    <Content Include="Assets\Audio\scavengers_fruit1.aif" />
+    <Content Include="Assets\Audio\scavengers_fruit2.aif" />
+    <Content Include="Assets\Audio\scavengers_music.aif" />
+    <Content Include="Assets\Audio\scavengers_soda1.aif" />
+    <Content Include="Assets\Audio\scavengers_soda2.aif" />
+    <Content Include="Assets\Sprites\Scavengers_SpriteSheet.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>
